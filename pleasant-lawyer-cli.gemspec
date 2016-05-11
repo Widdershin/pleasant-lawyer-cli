@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ncwjohnstone@gmail.com"]
 
   spec.summary       = %q{A CLI for pleasant lawyer}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/Widdershin/pleasant-lawyer-cli"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
