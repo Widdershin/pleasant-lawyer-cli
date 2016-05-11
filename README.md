@@ -28,6 +28,9 @@ better night
 ```shell
 $ plco better night
 # checks out b_58631
+
+$ plco -b wee sock
+# checks out b_53962 as a new branch
 ```
 
 ## Contributing
