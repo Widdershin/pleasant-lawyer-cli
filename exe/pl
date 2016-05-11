@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "pleasant_lawyer"
+
+input = ARGV.join ' '
+
+help = <<-HELP
+Please provide a pleasant lawyer name or beetil number as input
+
+E.g:
+  pl famous money # => 60254
+  pl 60254        # => famous money
+HELP
+
+fail help if input.empty?
+
+output = PleasantLawyer.convert(input)
+
+if output.respond_to? :join
+  output = output.join(' ')
+end
+
+puts output

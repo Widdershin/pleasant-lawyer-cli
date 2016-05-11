@@ -1,36 +1,36 @@
-# Pleasant::Lawyer::Cli
+# pleasant-lawyer-cli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pleasant/lawyer/cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+pleasant-lawyer-cli is a simple set of CLI tools for working with [pleasant lawyer](https://github.com/ezza/pleasant-lawyer).
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'pleasant-lawyer-cli'
+```bash
+$ gem install pleasant-lawyer-cli
+$ rbenv rehash
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install pleasant-lawyer-cli
 
 ## Usage
 
-TODO: Write usage instructions here
+pleasant-lawyer-cli currently comes with two commands, `pl` and `plco`.
 
-## Development
+`pl` can be used to convert between pleasant lawyer names and numbers on the command line:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```shell
+$ pl better night
+58631
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+$ pl 58631
+better night
+```
+
+`plco` can be used to check out branches by specifying a pleasant lawyer name.
+
+```shell
+$ plco better night
+# checks out b_58631
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pleasant-lawyer-cli.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Widdershin/pleasant-lawyer-cli.
 
