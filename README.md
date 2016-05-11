@@ -34,3 +34,7 @@ $ plco better night
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/Widdershin/pleasant-lawyer-cli.
 
+
+## License
+
+All code is property of Powershop but available under the MIT license.
