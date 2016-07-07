@@ -2,8 +2,6 @@
 
 require "pleasant_lawyer_cli"
 
-input = ARGV.join ' '
-
 help = <<-HELP
 Please provide a pleasant lawyer name or beetil number as input
 
@@ -11,6 +9,13 @@ E.g:
   pl famous money # => 60254
   pl 60254        # => famous money
 HELP
+
+if ARGV.length == 1 && %w(-h --help).include?(ARGV[0])
+  puts help
+  exit 0
+end
+
+input = ARGV.join ' '
 
 fail help if input.empty?
 
