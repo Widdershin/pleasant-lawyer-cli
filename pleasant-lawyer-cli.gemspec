@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "pleasant-lawyer-cli"
-  spec.version       = "0.2.0"
+  spec.version       = "0.3.0"
   spec.authors       = ["Nick Johnstone"]
   spec.email         = ["ncwjohnstone@gmail.com"]
 
